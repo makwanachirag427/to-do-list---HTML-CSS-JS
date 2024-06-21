@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.67) 50%,
+      rgba(0, 0, 0, 0.67) 50%
+    ),
+    url("./bg.jpg") no-repeat center center/cover;
+}
+
+.todo-container {
+  border: 0.5px solid rgba(219, 215, 215, 0.963);
+  width: 70%;
+  max-width: 480px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(26, 26, 26, 0.326);
+  margin-top: 6rem;
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.input #todo-input {
+  background: transparent;
+  border: 0.5px solid rgba(219, 215, 215, 0.963);
+  border-radius: 0.25rem;
+  outline: none;
+  color: gainsboro;
+  padding: 0.5rem;
+  padding-left: 0.5rem;
+  width: 65%;
+  font-size: 1.2rem;
+}
+#todo-input::placeholder {
+  color: rgb(171, 168, 168);
+}
+
+.input #todo-btn {
+  width: 25%;
+  padding: 0.5rem;
+  background: transparent;
+  border: 0.5px solid rgba(219, 215, 215, 0.963);
+  border-radius: 0.25rem;
+  color: gainsboro;
+  font-size: 1.2rem;
+}
+.input #todo-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.todos {
+}
+
+.todo-item {
+  border: 0.5px solid rgba(219, 215, 215, 0.963);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-block: 0.5rem;
+  padding-block:0.25rem ;
+}
+
+
+.todo {
+  width: 70%;
+  color: rgb(248, 244, 244);
+  padding: 0.5rem;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+
+}
+.mark {
+  text-decoration:2px line-through;
+}
+
+.edit,.delete {
+    height: 1.25rem;
+    width: 1.25rem;
+    padding:0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    border: 0.5px solid rgba(175, 171, 171, 0.963);
+    
+}
+.edit:hover,.delete:hover {
+    border: 1.5px solid rgb(255, 255, 255);
+}
+.edit {
+    color: white;
+}
+.delete {
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media only screen and (min-width: 992px) {
+  .todo-container {
+    width: 50vw;
+  }
+}
